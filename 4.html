@@ -3,38 +3,126 @@
 <head>
   <title>WEB1 - homework</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    #active {
+      color:red;
+    }
+    .saw {
+      color:gray;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      border-bottom:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    ol2{
+      border-bottom:1px solid gray;
+      border-right:1px solid gray;
+      margin:0;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid ol2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #grid #article{
+      padding-left:25px;
+      grid-template-columns: 1fr;
+    }
+    #first{
+      border-right:1px solid gray;
+      border-bottom:1px solid gray;
+      padding-left:20px;
+      padding-right:20px;
+    }
+    #second{
+      border-bottom:1px solid gray;
+      padding-left:20px;
+      padding-right:20px;
+    }
+    #third{
+      border-right:1px solid gray;
+      padding-left:20px;
+      padding-right:20px;
+    }
+    #forth{
+      border:0px solid gray;
+      padding-left:20px;
+      padding-right:20px;
+    }
+    
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    <li><a href="4.html">homework</a></li>
-  </ol>
-  <h2>homework</h2>
-  <h3><strong>html 태그 5가지</strong></h3>
-  <p>
-    <ul>
-      <li>'&lt;html&gt;':웹 페이지의 시작과 끝</li>
-      <li>'&lt;head&gt;':웹 페이지의 정보, 문서에서 사용할 외부 파일들을 링크할 때 사용</li>
-      <li>'&lt;body&gt;':브라우저에 실제 표시되는 내용</li>
-      <li>'&lt;title&gt;':문서 제목</li>
-      <li>'&lt;meta&gt;':문자 인코딩 및 문서 키워드, 요약 정보</li>
-    </ul>
-  </p>
-  <h3><strong>클라이언트와 서버</strong></h3>
-  <p>
-    <ul>
-      <li>클라이언트는 고객이라는 뜻으로 정보를 요청하고 서버로부터 정보를 제공받는다.</li>
-      <li>서버는 서비스 제공자라는 뜻으로 클라이언트에게 네트워크를 통해 정보나 서비스를 제공한다.</li>
-    </ul>
-  </p>
-  <h3><strong>CSS는 왜 필요할까</strong></h3>
-  <p>
-    <ul>
-      <li>CSS는 단순히 정보를 글이나 사진으로만 제공하는 HTML의 특징에서 더 나아가 글에 색을 입혀 전달력을 높여주고, 코드의 수정 및 작성을 간단하게 해주기에 필요하다.</li>
-    </ul>
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html"class='saw'>HTML</a></li>
+      <li><a href="2.html"class='saw'>CSS</a></li>
+      <li><a href="3.html"class='saw'>JavaScript</a></li>
+      <li><a href="4.html"class='saw' id="active">Homework</a></li>
+    </ol>
+    <ol2>
+        <div id="first">
+          <h3><strong>html 태그 5가지</strong></h3>
+          <p>
+            <ul>
+              <li>'&lt;html&gt;':웹 페이지의 시작과 끝</li>
+              <li>'&lt;head&gt;':웹 페이지의 정보, 문서에서 사용할 외부 파일들을 링크할 때 사용</li>
+              <li>'&lt;body&gt;':브라우저에 실제 표시되는 내용</li>
+              <li>'&lt;title&gt;':문서 제목</li>
+              <li>'&lt;meta&gt;':문자 인코딩 및 문서 키워드, 요약 정보</li>
+            </ul>
+          </p>
+        </div>
+        <div id="second">
+          <h3><strong>클라이언트와 서버</strong></h3>
+          <p>
+            <ul>
+              <li>클라이언트는 고객이라는 뜻으로 정보를 요청하고 서버로부터 정보를 제공받는다.</li>
+              <li>서버는 서비스 제공자라는 뜻으로 클라이언트에게 네트워크를 통해 정보나 서비스를 제공한다.</li>
+            </ul>
+          </p>
+        </div>
+        <div id="third">
+          <h3><strong>CSS는 왜 필요할까</strong></h3>
+          <p>
+            <ul>
+              <li>CSS는 단순히 정보를 글이나 사진으로만 제공하는 HTML의 특징에서 더 나아가 글에 색을 입혀 전달력을 높여주고, 코드의 수정 및 작성을 간단하게 해주기에 필요하다.</li>
+            </ul>
+          </p>
+        </div>
+        <div id="forth">
+          <h3><strong>JavaScript의 유래</strong></h3>
+          <p>
+            <ul>
+              <li>1995년 당시 약 90%의 시장 점유율로 웹 브라우저 시장을 지배하고 있던 넷스케이프 커뮤니케이션즈(Netscape comunications)는 정적인 HTML을 동적으로 표현하기 위해 경량의 프로그래밍 언어를 도입하기로 결정했다. 그래서 탄생한 것이 브렌던 아이크(Brendan Eich)가 개발한 자바스크립트이다. 자바스크립트는 1996년 3월 넷스케이프 커뮤니케이션즈의 웹 브라우저인 Netscape Navigator 2에 탑재되었고 “Mocha”로 명명되었다. 그해 9월 “LiveScript”로 이름이 변경되었고, 12월 “JavaScript”로 최종 명명되었다.</li>
+            </ul>
+          </p>
+        </div>
+    </ol2>
+  </div>
 </body>
 </html>
